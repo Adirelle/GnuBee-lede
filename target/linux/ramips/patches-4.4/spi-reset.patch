@@ -3,7 +3,7 @@ new file mode 100644
 index 0000000..de4ee2c
 --- /dev/null
 +++ b/target/linux/ramips/patches-4.4/0800-mtd-m25p80-Reset-chip-to-3-byte-addressing-on-system.patch
-@@ -0,0 +1,65 @@
+@@ -0,0 +1,41 @@
 +diff --git a/drivers/mtd/devices/m25p80.c b/drivers/mtd/devices/m25p80.c
 +index fe9ceb7..2151975 100644
 +--- a/drivers/mtd/devices/m25p80.c
