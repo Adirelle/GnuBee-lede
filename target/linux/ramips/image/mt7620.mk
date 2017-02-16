@@ -189,6 +189,12 @@ define Device/mt7620a_v22sg
 endef
 TARGET_DEVICES += mt7620a_v22sg
 
+define Device/omy-x2
+  DTS := OMY-X2
+  DEVICE_TITLE := OMYlink X2
+endef
+TARGET_DEVICES += omy-x2
+
 define Device/rp-n53
   DTS := RP-N53
   DEVICE_TITLE := Asus RP-N53

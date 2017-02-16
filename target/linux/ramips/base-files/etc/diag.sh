@@ -149,7 +149,8 @@ get_status_led() {
 	linkits7688d)
 		[ "$1" = "upgrade" ] && status_led="mediatek:orange:wifi"
 		;;
-	m2m)
+	m2m|\
+	omy-x2)
 		status_led="$board:blue:wifi"
 		;;
 	m3|\

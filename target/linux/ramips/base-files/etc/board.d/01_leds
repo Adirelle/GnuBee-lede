@@ -264,6 +264,11 @@ newifi-d1)
 nw718)
 	set_usb_led "$board:amber:usb"
 	;;
+omy-x2)
+	ucidef_set_led_default "lan" "lan" "$board:green:lan" "eth0.1" "tx rx"
+	ucidef_set_led_default "wan" "wan" "$board:green:lan" "eth0.2" "tx rx"
+	set_wifi_led "$board:blue:wifi"
+	;;
 oy-0001)
 	ucidef_set_led_default "power" "power" "$board:green:power" "1"
 	set_wifi_led "$board:green:wifi"

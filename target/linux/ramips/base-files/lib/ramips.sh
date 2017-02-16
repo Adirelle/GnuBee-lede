@@ -367,6 +367,9 @@ ramips_board_detect() {
 	*"NW718")
 		name="nw718"
 		;;
+	*"OMY-X2")
+		name="omy-x2"
+		;;
 	*"Onion Omega2")
 		name="omega2"
 		;;

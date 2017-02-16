@@ -88,6 +88,7 @@ ramips_setup_interfaces()
 	mzk-750dhp|\
 	mzk-w300nh2|\
 	nixcore|\
+	omy-x2|\
 	oy-0001|\
 	pbr-m1|\
 	psg1208|\
