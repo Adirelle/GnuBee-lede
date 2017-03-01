@@ -88,6 +88,13 @@ define Device/mt7621
 endef
 TARGET_DEVICES += mt7621
 
+define Device/gb-pc1
+  DTS := GB-PC1
+  IMAGE_SIZE := $(ralink_default_fw_size_16M)
+  DEVICE_TITLE := GnuBee Personal Cloud One
+endef
+TARGET_DEVICES += gb-pc1
+
 define Device/newifi-d1
   DTS := Newifi-D1
   IMAGE_SIZE := $(ralink_default_fw_size_32M)
