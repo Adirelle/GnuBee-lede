@@ -40,8 +40,37 @@
 		compatible = "gpio-leds";
 
 		status {
-			label = "zbt-wg2626:green:status";
-			gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
+			label = "gnubee:green:status";
+			gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+		};
+
+		system {
+			label = "gnubee:green:system";
+			gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
+		};
+	};
+
+	gpio-power {
+		compatible = "gpio-power";
+
+		26 {
+			label = "gnubee:power:gpio26";
+			gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
+		};
+
+		28 {
+			label = "gnubee:power:gpio28";
+			gpios = <&gpio0 28 GPIO_ACTIVE_HIGH>;
+		};
+
+		29 {
+			label = "gnubee:power:gpio29";
+			gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
+		};
+
+		30 {
+			label = "gnubee:power:gpio30";
+			gpios = <&gpio0 30 GPIO_ACTIVE_HIGH>;
 		};
 	};
 };
