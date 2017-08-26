@@ -6,6 +6,7 @@
 #include <dt-bindings/input/input.h>
 
 / {
+	compatible = "gnubee,gb-pc1", "mediatek,mt7621-soc";
 	model = "GB-PC1";
 
 	memory@0 {
@@ -39,55 +40,24 @@
 	gpio-leds {
 		compatible = "gpio-leds";
 
-		status {
-			label = "gnubee:green:status";
-			gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
-		};
-
 		system {
-			label = "gnubee:green:system";
-			gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
-	gpio-power {
-		compatible = "gpio-power";
-
-		26 {
-			label = "gnubee:power:gpio26";
-			gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
+			label = "gb-pc1:green:system";
+			gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
 		};
 
-		28 {
-			label = "gnubee:power:gpio28";
-			gpios = <&gpio0 28 GPIO_ACTIVE_HIGH>;
+		status {
+			label = "gb-pc1:green:status";
+			gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
 		};
 
-		29 {
-			label = "gnubee:power:gpio29";
-			gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
+		lan1 {
+			label = "gb-pc1:green:lan1";
+			gpios = <&gpio0 24 GPIO_ACTIVE_LOW>;
 		};
 
-		30 {
-			label = "gnubee:power:gpio30";
-			gpios = <&gpio0 30 GPIO_ACTIVE_HIGH>;
-		};
-	};
-};
-
-&ethernet {
-	status = "okay";
-};
-
-&pcie {
-	status = "okay";
-};
-
-&pinctrl {
-	state_default: pinctrl0 {
-		gpio {
-			ralink,group = "mdio", "rgmii2", "wdt";
-			ralink,function = "gpio";
+		lan2 {
+			label = "gb-pc1:green:lan2";
+			gpios = <&gpio0 25 GPIO_ACTIVE_LOW>;
 		};
 	};
 };
@@ -128,6 +98,23 @@
 		partition@50000 {
 			label = "firmware";
 			reg = <0x50000 0x1fb0000>;
+		};
+	};
+};
+
+&pcie {
+	status = "okay";
+};
+
+&ethernet {
+	mtd-mac-address = <&factory 0xe000>;
+};
+
+&pinctrl {
+	state_default: pinctrl0 {
+		gpio {
+			ralink,group = "wdt", "rgmii2", "uart3";
+			ralink,function = "gpio";
 		};
 	};
 };
