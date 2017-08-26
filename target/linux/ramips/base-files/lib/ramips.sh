@@ -205,6 +205,9 @@ ramips_board_detect() {
 	*"FreeStation5")
 		name="freestation5"
 		;;
+	*"GB-PC1")
+		name="gb-pc1"
+		;;
 	*"GL-MT300A")
 		name="gl-mt300a"
 		;;
@@ -366,6 +369,9 @@ ramips_board_detect() {
 		;;
 	*"NW718")
 		name="nw718"
+		;;
+	*"OMY-X2")
+		name="omy-x2"
 		;;
 	*"Onion Omega2")
 		name="omega2"

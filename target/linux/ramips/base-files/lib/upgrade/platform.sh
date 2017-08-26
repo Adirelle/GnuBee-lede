@@ -58,6 +58,7 @@ platform_check_image() {
 	firewrt|\
 	fonera20n|\
 	freestation5|\
+	gb-pc1|\
 	gl-mt300a|\
 	gl-mt300n|\
 	gl-mt750|\
@@ -103,6 +104,7 @@ platform_check_image() {
 	newifi-d1|\
 	nixcore|\
 	nw718|\
+	omy-x2|\
 	omega2|\
 	omega2p|\
 	oy-0001|\

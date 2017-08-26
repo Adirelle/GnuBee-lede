@@ -70,6 +70,7 @@ get_status_led() {
 	dir-620-a1|\
 	dir-620-d1|\
 	dwr-512-b|\
+	gb-pc1|\
 	hpm|\
 	hw550-3g|\
 	mac1200rv2|\
@@ -150,7 +151,8 @@ get_status_led() {
 	linkits7688d)
 		[ "$1" = "upgrade" ] && status_led="mediatek:orange:wifi"
 		;;
-	m2m)
+	m2m|\
+	omy-x2)
 		status_led="$board:blue:wifi"
 		;;
 	m3|\

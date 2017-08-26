@@ -78,6 +78,7 @@ ramips_setup_interfaces()
 	dir-320-b1|\
 	dir-610-a1|\
 	dir-615-h1|\
+	gb-pc1|\
 	firewrt|\
 	hlk-rm04|\
 	mac1200rv2|\
@@ -88,6 +89,7 @@ ramips_setup_interfaces()
 	mzk-750dhp|\
 	mzk-w300nh2|\
 	nixcore|\
+	omy-x2|\
 	oy-0001|\
 	pbr-m1|\
 	psg1208|\
